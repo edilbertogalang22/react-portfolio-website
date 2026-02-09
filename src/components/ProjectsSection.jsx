@@ -4,8 +4,8 @@ const projects = [
   {
     id: 1,
     title: "Barangay Management System",
-    description: "A beautiful landing page app using React and Tailwind.",
-    image: "/projects/project1.jpg",
+    description: "A beautiful landing page app using React JS and Tailwind.",
+    image: "projects/project1.jpg",
     tags: ["React", "TailwindCSS", "Supabase"],
     demoUrl: "#",
     githubUrl: "#",
