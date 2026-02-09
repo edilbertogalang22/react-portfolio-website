@@ -8,8 +8,15 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaServer,
 } from "react-icons/fa";
-import { SiTailwindcss, SiNextdotjs, SiExpress, SiMysql } from "react-icons/si";
+import {
+  SiTailwindcss,
+  SiExpress,
+  SiMysql,
+  SiAxios,
+  SiJsonwebtokens,
+} from "react-icons/si";
 
 const skills = [
   // Frontend
@@ -18,12 +25,14 @@ const skills = [
   { name: "JavaScript", icon: FaJs, category: "frontend" },
   { name: "React JS", icon: FaReact, category: "frontend" },
   { name: "Tailwind CSS", icon: SiTailwindcss, category: "frontend" },
-  { name: "Next.js", icon: SiNextdotjs, category: "frontend" },
 
   // Backend
   { name: "Node.js", icon: FaNodeJs, category: "backend" },
   { name: "Express", icon: SiExpress, category: "backend" },
   { name: "MySQL", icon: SiMysql, category: "backend" },
+  { name: "JWT", icon: SiJsonwebtokens, category: "backend" },
+  { name: "Axios", icon: SiAxios, category: "backend" },
+  { name: "REST APIs", icon: FaServer, category: "backend" },
 
   // Tools
   { name: "Git", icon: FaGitAlt, category: "tools" },
