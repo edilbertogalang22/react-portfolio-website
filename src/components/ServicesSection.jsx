@@ -12,18 +12,15 @@ export const ServicesSection = () => {
       <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {ServicesData.map((service, index) => (
           <div
-            key={service.s_no}
-            className={`bg-card shadow-md rounded-lg p-6 card-hover animate-[var(--animate-fade-in-delay-${index})]`}
+            key={index}
+            className={`bg-card shadow-md rounded-lg p-6 card-hover h-full flex flex-col animate-[var(--animate-fade-in-delay-${index})]`}
           >
             {/* Service Title */}
             <h3 className="text-xl font-semibold mb-2 text-glow">
-              {service.s_no}. {service.s_name}
+              {service.s_name}
             </h3>
-            <h2 className="text-xl font-extrabold mb-2 text-glow">
-              {service.s_loc}
-            </h2>
             {/* Service Description */}
-            <p className="text-foreground">{service.s_desc}</p>
+            <p className="text-foreground flex-grow">{service.s_desc}</p>
 
             {/* Optional Button */}
           </div>
