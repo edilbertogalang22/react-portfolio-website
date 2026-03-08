@@ -7,7 +7,7 @@ import { AboutSection } from "../components/AboutSection";
 import { SkillsSection } from "../components/SkillsSection";
 import { ProjectsSection } from "../components/ProjectsSection";
 import { ContactSection } from "../components/ContactSection.jsx";
-
+import { ServicesSection } from "../components/ServicesSection.jsx";
 function Home() {
   return (
     <div className="min-h-screen bg-background text-foreground overflow-x-hidden">
@@ -25,6 +25,7 @@ function Home() {
         <HeroSection />
         <AboutSection />
         <SkillsSection />
+        <ServicesSection />
         <ProjectsSection />
         <ContactSection />
       </main>

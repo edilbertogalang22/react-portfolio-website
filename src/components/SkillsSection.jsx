@@ -8,14 +8,14 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
-  FaServer,
+  // FaServer,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiExpress,
   SiMysql,
-  SiAxios,
-  SiJsonwebtokens,
+  // SiAxios,
+  // SiJsonwebtokens,
 } from "react-icons/si";
 
 const skills = [
@@ -30,9 +30,9 @@ const skills = [
   { name: "Node.js", icon: FaNodeJs, category: "backend" },
   { name: "Express", icon: SiExpress, category: "backend" },
   { name: "MySQL", icon: SiMysql, category: "backend" },
-  { name: "JWT", icon: SiJsonwebtokens, category: "backend" },
-  { name: "Axios", icon: SiAxios, category: "backend" },
-  { name: "REST APIs", icon: FaServer, category: "backend" },
+  // { name: "JWT", icon: SiJsonwebtokens, category: "backend" },
+  // { name: "Axios", icon: SiAxios, category: "backend" },
+  // { name: "REST APIs", icon: FaServer, category: "backend" },
 
   // Tools
   { name: "Git", icon: FaGitAlt, category: "tools" },

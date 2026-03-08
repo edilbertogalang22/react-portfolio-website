@@ -52,7 +52,7 @@ export const AboutSection = () => {
               data-delay="200"
             >
               Building the future,
-              <span className="font-serif italic font-normal text-primary">
+              <span className="font-normal text-primary">
                 {" "}
                 one component at a time.
               </span>
@@ -90,7 +90,7 @@ export const AboutSection = () => {
               data-reveal
               data-delay="400"
             >
-              <p className="text-lg font-medium italic text-foreground">
+              <p className="text-lg font-medium text-foreground">
                 "My mission is to create digital experiences that are not just
                 functional, but truly delightful — products that users love to
                 use and developers love to maintain."

@@ -15,13 +15,15 @@ export const HeroSection = () => {
         <img
           src={profilePic}
           alt="Edilberto Galang"
-          className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-primary shadow-lg"
+          className="w-40 h-40 md:w-60 md:h-60 rounded-full mx-auto object-cover border-4 border-primary shadow-lg"
         />
       </div>
 
       {/* Name */}
       <h1 className="text-4xl md:text-6xl font-bold tracking-tight flex flex-wrap justify-center gap-2">
-        <span data-reveal data-delay="100">Hi, I'm</span>
+        <span data-reveal data-delay="100">
+          Hi, I'm
+        </span>
         <span data-reveal data-delay="200" className="text-primary">
           Edilberto
         </span>
@@ -36,10 +38,10 @@ export const HeroSection = () => {
         data-reveal
         data-delay="400"
       >
-        Fresh graduate in Bachelor of Science Information Systems with a
-        strong interest in web development. Beginning to explore front-end
-        technologies and currently learning React. Passionate about exploring
-        new technologies and building hands-on projects in the IT field.
+        Fresh graduate in Bachelor of Science Information Systems with a strong
+        interest in web development. Beginning to explore front-end technologies
+        and currently learning React. Passionate about exploring new
+        technologies and building hands-on projects in the IT field.
       </p>
 
       {/* Buttons */}
