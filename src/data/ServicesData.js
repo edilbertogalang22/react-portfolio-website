@@ -1,28 +1,28 @@
 const ServicesData = [
-    {
-        s_no: "01",
-        s_name: "Front-End Web Development",
-        s_desc: "I build responsive and interactive websites with clean layouts and user-friendly interfaces using HTML, CSS, and JavaScript with React Framework."
-    },
-    {
-        s_no: "02",
-        s_name: "Video Editing (Template-Based / Freelance Projects)",
-        s_loc: "Capcut Community",
-        s_desc: "I edit videos using CapCut, including short videos. I handle template-based projects and can expand to other types of video editing."
-    },
-    
-    {
-        s_no: "03",
-        s_name: "IT & System Setup",
-        s_loc: "Bulacan First District Office",
-        s_desc: "I set up computer systems and troubleshoot hardware issues, ensuring components work correctly and systems run smoothly."
-    },
-    {
-        s_no: "04",
-        s_name: "Data Encoding",
-        s_loc: "Bulacan First District Office",
-        s_desc: "I provide accurate data entry and manage digital tasks efficiently for government projects, including spreadsheets, online forms, and other office-related digital tasks. I work as GIP 4 months contract"
-    },
-]
+  {
+    s_no: "01",
+    s_name: "Frontend Web Development",
+    s_desc:
+      "I build simple and responsive websites using React, JavaScript, HTML, and Tailwind CSS.",
+  },
+  {
+    s_no: "02",
+    s_name: "Responsive Web Design",
+    s_desc:
+      "I create mobile-friendly layouts that adapt to different screen sizes using Tailwind CSS.",
+  },
+  {
+    s_no: "03",
+    s_name: "React Component Development",
+    s_desc:
+      "I develop reusable React components for clean and organized frontend applications.",
+  },
+  {
+    s_no: "04",
+    s_name: "Landing Page Development",
+    s_desc:
+      "I create simple landing pages and portfolio websites for small projects.",
+  },
+];
 
 export default ServicesData;
