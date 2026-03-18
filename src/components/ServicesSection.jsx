@@ -20,7 +20,7 @@ export const ServicesSection = () => {
               {service.s_name}
             </h3>
             {/* Service Description */}
-            <p className="text-foreground flex-grow">{service.s_desc}</p>
+            <p className="text-foreground grow">{service.s_desc}</p>
 
             {/* Optional Button */}
           </div>

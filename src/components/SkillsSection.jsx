@@ -8,15 +8,19 @@ import {
   FaReact,
   FaNodeJs,
   FaGitAlt,
+  FaCode,
   // FaServer,
 } from "react-icons/fa";
 import {
   SiTailwindcss,
   SiExpress,
   SiMysql,
+  SiOpenai,
+
   // SiAxios,
   // SiJsonwebtokens,
 } from "react-icons/si";
+import { icons } from "lucide-react";
 
 const skills = [
   // Frontend
@@ -36,9 +40,22 @@ const skills = [
 
   // Tools
   { name: "Git", icon: FaGitAlt, category: "tools" },
+
+  // Ai Helper
+  { name: "ChatGPT", icon: SiOpenai, category: "AI Helpers" },
+
+  // Code
+  { name: "VS Code", icon: FaCode, category: "Code Editor" },
 ];
 
-const categories = ["all", "frontend", "backend", "tools"];
+const categories = [
+  "all",
+  "frontend",
+  "backend",
+  "tools",
+  "AI Helpers",
+  "Code Editor",
+];
 
 export const SkillsSection = () => {
   const [activeCategory, setActiveCategory] = useState("all");

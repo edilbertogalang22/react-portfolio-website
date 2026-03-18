@@ -5,8 +5,8 @@ import {
   MapPin,
   Phone,
   Send,
-  Twitch,
   Twitter,
+  Facebook,
 } from "lucide-react";
 import { cn } from "../lib/utils";
 import { useToast } from "../hooks/use-toast";
@@ -87,7 +87,7 @@ export const ContactSection = () => {
                     href="tel:+11234567890"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +1 (123) 456-7890
+                    09318441654
                   </a>
                 </div>
               </div>
@@ -108,18 +108,32 @@ export const ContactSection = () => {
             <div className="pt-8">
               <h4 className="font-medium mb-4">Connect With Me</h4>
               <div className="flex space-x-4 justify-center">
-                <a href="#" target="_blank" aria-label="LinkedIn Profile">
+                <a
+                  href="https://www.linkedin.com/in/edilberto-jr-galang-4b1014372/?skipRedirect=true"
+                  target="_blank"
+                  aria-label="LinkedIn Profile"
+                >
                   <Linkedin />
                 </a>
                 <a href="#" target="_blank" aria-label="Twitter Profile">
                   <Twitter />
                 </a>
-                <a href="#" target="_blank" aria-label="Instagram Profile">
+                <a
+                  href="https://www.instagram.com/adilmalapoks/"
+                  target="_blank"
+                  aria-label="Instagram Profile"
+                >
                   <Instagram />
                 </a>
-                <a href="#" target="_blank" aria-label="Twitch Profile">
-                  <Twitch />
+
+                <a
+                  href="https://www.facebook.com/EdilbertoGalang22"
+                  target="_blank"
+                  aria-label="Facebook Profile"
+                >
+                  <Facebook />
                 </a>
+                
               </div>
             </div>
           </div>
