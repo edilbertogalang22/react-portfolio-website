@@ -1,13 +1,12 @@
 import { cn } from "@/lib/utils";
 import { Menu, X } from "lucide-react";
 import { useEffect, useState } from "react";
-import { href } from "react-router-dom";
 
 const navItems = [
-  { name: "Home", href: "#hero" },
+  { name: "Home", href: "#home" },
   { name: "About", href: "#about" },
   { name: "Skills", href: "#skills" },
-  { name: "Services", href: "#services"},
+  { name: "Services", href: "#services" },
   { name: "Projects", href: "#projects" },
   { name: "Contact", href: "#contact" },
 ];
@@ -36,11 +35,10 @@ export const Navbar = () => {
       <div className="container flex items-center justify-between">
         <a
           className="text-xl font-bold text-primary flex items-center"
-          href="#hero"
+          href="#home"
         >
           <span className="relative z-10">
-            <span className="text-glow text-foreground"> Ehdil </span>{" "}
-            Portfolio
+            <span className="text-glow text-foreground"> Ehdil </span> Portfolio
           </span>
         </a>
 
