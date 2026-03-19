@@ -16,7 +16,7 @@ const projects = [
     ],
     tags: ["React JS", "TailwindCSS", "Node JS", "Express", "MySQL"],
     demoUrl: "#",
-    githubUrl: "#",
+    githubUrl: "https://github.com/edilbertogalang22/Simple-Crud",
   },
 ];
 
