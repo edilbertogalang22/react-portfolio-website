@@ -52,7 +52,7 @@ export const ContactSection = () => {
     // 👉 pinaka importante (custom message layout)
     form.append(
       "message",
-      `📩 New Message from Portfolio
+      `📩 Hello! You have a New Message from Portfolio
 
 Name: ${formData.name}
 Email: ${formData.email}
