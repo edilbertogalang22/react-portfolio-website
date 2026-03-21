@@ -65,22 +65,24 @@ export const AboutSection = () => {
               data-delay="300"
             >
               <p>
-                Fresh graduate in Information Systems with a strong interest in
-                web development. Beginning to explore front-end technologies and
-                currently learning React. Passionate about exploring new
-                technologies and building hands-on projects in the IT field.
+                I'm a recent graduate in Information Systems, currently diving
+                deep into web development. I'm actively learning React, Node.js,
+                and related technologies to build practical, hands-on projects
+                that solve real-world problems.
               </p>
               <p>
-                “I used React with Vite and Tailwind for the frontend, Node.js
-                and Express for the backend, MySQL as the database, and
-                implemented authentication using JWT, CORS middleware for
-                cross-origin requests, Multer for file uploads, and Express
-                Router for modular API structure.”
+                My focus is on creating clean, maintainable code and learning
+                best practices for both frontend and backend development. I'm
+                exploring React with Vite and Tailwind for responsive
+                interfaces, Node.js with Express for server-side logic, and
+                MySQL for data management.
               </p>
               <p>
-                When I'm not coding, you'll find me exploring new technologies,
-                contributing to open-source projects, or sharing knowledge with
-                the developer community.
+                Outside coding, I enjoy discovering new technologies,
+                experimenting with projects, playing video games, watching
+                movies, and listening to music. I believe in continuous learning
+                and collaboration to grow as a developer and contribute to
+                impactful projects.
               </p>
             </div>
 
@@ -91,9 +93,10 @@ export const AboutSection = () => {
               data-delay="400"
             >
               <p className="text-lg font-medium text-foreground">
-                "My mission is to create digital experiences that are not just
-                functional, but truly delightful — products that users love to
-                use and developers love to maintain."
+                "My mission is to create user-friendly and visually appealing
+                websites that deliver exceptional user experiences. I believe in
+                the power of collaboration and continuous learning to drive
+                innovation and excellence in web development."
               </p>
             </div>
           </div>
