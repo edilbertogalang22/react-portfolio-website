@@ -28,20 +28,71 @@ export const ContactSection = () => {
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
     setIsSubmitting(true);
 
-    setTimeout(() => {
-      toast({
-        title: "Message sent!",
-        description: "Thank you for your message. I'll get back to you soon.",
+    const form = new FormData();
+    form.append("access_key", "908d07c2-dbf8-4004-a361-823892dae427");
+
+    // 👉 custom fields
+    form.append("name", formData.name);
+    form.append("email", formData.email);
+
+    // 👉 custom subject
+    form.append(
+      "email_subject",
+      `📩 New Message from ${formData.name} via Portfolio`,
+    );
+
+    // 👉 custom body format
+    form.append("from_name", "Portfolio Contact Form");
+    form.append("replyto", formData.email);
+
+    // 👉 pinaka importante (custom message layout)
+    form.append(
+      "message",
+      `📩 New Message from Portfolio
+
+Name: ${formData.name}
+Email: ${formData.email}
+
+Message:
+${formData.message}`,
+    );
+
+    try {
+      const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        body: form,
       });
 
-      // Reset form
-      setFormData({ name: "", email: "", message: "" });
-      setIsSubmitting(false);
-    }, 1500);
+      const data = await response.json();
+
+      if (data.success) {
+        toast({
+          title: "Message sent!",
+          description: "Thank you for your message. I'll get back to you soon.",
+          duration: 3000,
+        });
+
+        setFormData({ name: "", email: "", message: "" });
+      } else {
+        toast({
+          title: "Failed!",
+          description: data.message || "Something went wrong.",
+          duration: 3000,
+        });
+      }
+    } catch (error) {
+      toast({
+        title: "Error!",
+        description: "Network error.",
+        duration: 3000,
+      });
+    }
+
+    setIsSubmitting(false);
   };
 
   return (
@@ -133,7 +184,6 @@ export const ContactSection = () => {
                 >
                   <Facebook />
                 </a>
-                
               </div>
             </div>
           </div>
